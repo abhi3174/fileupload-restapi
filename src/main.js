@@ -1,6 +1,9 @@
 const express = require("express");
 const app = express();
 
+const cors = require("cors");
+app.use(cors()); // allowing all users to make call
+
 // START
 const path = require("path");
 const multer = require("multer");
